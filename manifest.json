@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "SIS Interface Overhaul",
+  "version": "0.1.0",
+  "description": "A modern, client-side UI layer for the student information portal.",
+  "content_scripts": [
+    {
+      "matches": ["https://sis.it.tufts.edu/*", "https://example.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
